@@ -266,7 +266,7 @@ data Alpha
   | YER  -- ^ Yemeni Rial
   | ZAR  -- ^ Rand
   | ZMW  -- ^ Zambian Kwacha
-  | ZWL  -- ^ Zimbabwe Dollar
+  | ZWG  -- ^ Zimbabwe Gold
   
   | ADP -- ^ Andorran peseta
   | AFA -- ^ Afghan afghani
@@ -393,6 +393,7 @@ data Alpha
   | ZWD -- ^ Zimbabwean dollar (first)
   | ZWN -- ^ Zimbabwean dollar (second)
   | ZWR -- ^ Zimbabwean dollar (third)
+  | ZWL  -- ^ Zimbabwe dollar (fourth and fifth)
   deriving (Eq, Ord, Enum, Bounded, Generic, Data, Typeable)
 
 
@@ -633,7 +634,7 @@ fromAlpha α =
     YER -> Currency YER 886 2 "Yemeni Rial" True
     ZAR -> Currency ZAR 710 2 "Rand" True
     ZMW -> Currency ZMW 967 2 "Zambian Kwacha" True
-    ZWL -> Currency ZWL 932 2 "Zimbabwe Dollar" True
+    ZWG -> Currency ZWG 924 2 "Zimbabwe Gold" True
 
     ALK -> Currency ALK 8 unknownMinorDigits "Old Albanian lek" False
     ARY -> Currency ARY 32 unknownMinorDigits "Argentine peso ley" False
@@ -739,6 +740,7 @@ fromAlpha α =
     ZWD -> Currency ZWD 716 2 "Zimbabwean dollar (first)" False
     ZWN -> Currency ZWN 942 2 "Zimbabwean dollar (second)" False
     ZWR -> Currency ZWR 935 2 "Zimbabwean dollar (third)" False
+    ZWL -> Currency ZWL 932 2 "Zimbabwean dollar (fourth and fifth)" False
     LAJ -> Currency LAJ 418 unknownMinorDigits "Lao kip" False
     LSM -> Currency LSM 426 unknownMinorDigits "Lesotho loti" False
     LUC -> Currency LUC 989 unknownMinorDigits "Luxembourg convertible franc (funds code)" False
