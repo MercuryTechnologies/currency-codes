@@ -254,6 +254,7 @@ data Alpha
   | XBC  -- ^ Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
   | XBD  -- ^ Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
   | XCD  -- ^ East Caribbean Dollar
+  | XCG  -- ^ Caribbean Guilder
   | XDR  -- ^ SDR (Special Drawing Right)
   | XOF  -- ^ CFA Franc BCEAO
   | XPD  -- ^ Palladium
@@ -622,6 +623,7 @@ fromAlpha α =
     XBC -> Currency XBC 957 0 "Bond Markets Unit European Unit of Account 9 (E.U.A.-9)" True
     XBD -> Currency XBD 958 0 "Bond Markets Unit European Unit of Account 17 (E.U.A.-17)" True
     XCD -> Currency XCD 951 2 "East Caribbean Dollar" True
+    XCG -> Currency XCG 532 2 "Caribbean Guilder" True
     XDR -> Currency XDR 960 0 "SDR (Special Drawing Right)" True
     XOF -> Currency XOF 952 0 "CFA Franc BCEAO" True
     XPD -> Currency XPD 964 0 "Palladium" True
